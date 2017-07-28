@@ -15,12 +15,7 @@ nav{
  }
 
 .seccion-nav{
-    background-image: url(../img/bg1.jpg);
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+    @include navBar();
 }
 
 .contenedor-texto{
@@ -35,7 +30,7 @@ nav{
 }
 
 .titulo{
-	color: #4db6ac;
+	color:$color-verde;
 	font-weight:bold;
 }
 
@@ -44,4 +39,12 @@ nav{
 	.sec-uno-texto{
 		margin-left:30px;
 	}
+}
+
+.sec-uno{
+    @include sec-uno();
+}
+
+.sec-uno-texto{
+	margin-top:$texto;
 }
